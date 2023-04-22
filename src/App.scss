@@ -6,7 +6,7 @@ $black: #000000;
 
 html,
 body {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/011/135/949/original/brown-wood-texture-background-wooden-panel-with-abstract-pattern-illustration-table-top-view-of-hardwood-floor-surface-3d-wooden-lumber-backdrop-good-for-advertising-background-vector.jpg");
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/961/549/non_2x/multi-layers-purple-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg");
   padding: 0;
   margin: 0;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -266,6 +266,91 @@ header {
   display : flex;
   flex-direction: row;
   color :rgb(255, 255, 255);
+}
+
+
+// search bar
+
+.searchInputs {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 2px solid black;
+  border-radius: 7px;
+  font-size: 18px;
+  padding: 15px;
+  height: 10px;
+  width: 300px;
+  color : antiquewhite;
+}
+
+.searchIcon {
+  height: 40px;
+  width: 50px;
+  background:blur(8px);
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.dataResult {
+  margin-top: 5px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightgrey;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
+
+
+
+// cards
+.cards{
+  height : 70vh;
+  width : 90vw;
+  margin : 15px;
+  background-color: rgba(0, 0, 0, 0.35);
+  border : 2px solid black;
+  border-radius: 15px;
 }
 
 @keyframes backgroundEffect {

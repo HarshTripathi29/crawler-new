@@ -6,6 +6,7 @@ import SignUpForm from "./SignUpForm.js";
 import SignInForm from "./SignInForm.js"; 
 import Sign from "./Sign.js"; 
 
+
 import {
   staggerText,
   staggerReveal,
@@ -89,8 +90,9 @@ const Hamburger = ({ state }) => {
                  
                    <Sign/>
                    
+                   
               </nav>
-
+              
 
               <div>
       
@@ -98,10 +100,11 @@ const Hamburger = ({ state }) => {
 
 
               <div ref={el => (info = el)} className='info'>
-                <h3>How?</h3>
+                {/* <h3>How?</h3>
                 <p>
                   please create an account to browse for books of your choice. Crawler will get you your desired books.
-                </p>
+                </p> */}
+               
               </div>
               <div className='locations'>
                 Genre:
