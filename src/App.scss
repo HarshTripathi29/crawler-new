@@ -6,7 +6,7 @@ $black: #000000;
 
 html,
 body {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/008/961/549/non_2x/multi-layers-purple-texture-3d-papercut-layers-in-gradient-banner-abstract-paper-cut-art-background-design-for-website-template-topography-map-concept-or-smooth-origami-paper-cut-vector.jpg");
+  background-image: url("https://images.hdqwalls.com/download/apple-abstract-dark-red-4k-3m-2880x1800.jpg");
   padding: 0;
   margin: 0;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -61,7 +61,7 @@ header {
       font-weight: 700;
       font-size: 1rem;
       text-decoration: none;
-      color: $black;
+      color: rgba(255, 255, 255, 0.35);
     }
     .menu {
       button {
@@ -71,6 +71,7 @@ header {
         cursor: pointer;
         font-size: 0.8rem;
         mix-blend-mode: difference;
+        color: rgba(255, 255, 255, 0.35);
       }
     }
   }
@@ -124,31 +125,7 @@ header {
           align-items: center;
           position: relative;
           top: 100px;
-          // nav {
-          //   display: block;
-          //   ul {
-          //     margin: 0;
-          //     padding: 0;
-          //     li {
-          //       list-style: none;
-          //       font-size: 2rem;
-          //       font-weight: 700;
-          //       cursor: pointer;
-          //       height: 335px;
-          //       overflow: hidden;
-          //       position: relative;
-          //       width: 700px;
-          //       a {
-          //         position: absolute;
-          //         color: #fff;
-          //         text-decoration: none;
-          //         &:hover {
-          //           color: $black;
-          //         }
-          //       }
-          //     }
-          //   }
-          // }
+          
           .info {
             color: #fff;
             width: 300px;
@@ -194,10 +171,10 @@ header {
 // new css for signup signin form 
 
 .containerSign{
-  height : 400px;
+  height : 440px;
   width : 500px;
-  backdrop-filter: blur(50px);
-  border : 2px solid black;
+  backdrop-filter: blur(70px);
+  border : 2px solid rgba(255, 255, 255, 0.507);
   border-radius : 10px;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -280,7 +257,8 @@ header {
 
 .search input {
   background-color: rgba(0, 0, 0, 0.35);
-  border: 2px solid black;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
   border-radius: 7px;
   font-size: 18px;
   padding: 15px;
@@ -295,6 +273,8 @@ header {
   background:blur(8px);
   display: grid;
   place-items: center;
+  color :rgba(255, 255, 255, 0.35);
+  border-radius: 15px;
 }
 
 input:focus {
@@ -349,7 +329,7 @@ a:hover {
   width : 90vw;
   margin : 15px;
   background-color: rgba(0, 0, 0, 0.35);
-  border : 2px solid black;
+  border : 2px solid rgba(255, 255, 255, 0.35);
   border-radius: 15px;
 }
 

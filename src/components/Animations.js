@@ -26,20 +26,8 @@ export const staggerRevealClose = (node1, node2) => {
   });
 };
 
-// STAGGER THE LINKS TO APPEAR (sign up)
-// export const staggerText = (node1 ) => {
-//   gsap.from([node1], {
-//     duration: 0.8,
-//     y: 100,
-//     delay: 0.1,
-//     ease: "power3.inOut",
-//     stagger: {
-//       amount: 0.3
-//     }
-//   });
-// };
 
-// Fade up for the additonal info on our menu (our promises)
+// Fade up for the additonal info on our menu 
 export const fadeInUp = node => {
   gsap.from(node, {
     y: 60,
@@ -50,53 +38,34 @@ export const fadeInUp = node => {
   });
 };
 
-// Hover on the link
-// export const handleHover = e => {
-//   gsap.to(e.target, {
-//     duration: 0.3,
-//     y: 0.5,
-//     skewX: 0,
-//     ease: "power1.inOut"
+
+// // adds city image once you hover on
+// export const handleCity = (city, target) => {
+//   gsap.to(target, {
+//     duration: 0,
+//     background: `url(${city}) center center`
+//   });
+//   gsap.to(target, {
+//     duration: 0.4,
+//     opacity: 1,
+//     ease: "power3.inOut"
+//   });
+//   gsap.from(target, {
+//     duration: 0.4,
+//     skewY: 2,
+//     transformOrigin: "right top"
 //   });
 // };
 
-// Hover off the link
-// export const handleHoverExit = e => {
-//   gsap.to(e.target, {
-//     duration: 0.3,
-//     y: 0.5,
-//     skewX: 0,
-//     ease: "power1.inOut"
+// // Removes the city image once you hover off
+// export const handleCityReturn = target => {
+//   gsap.to(target, {
+//     duration: 0,
+//     skewY: 0
+//   });
+//   gsap.to(target, {
+//     duration: 0.4,
+//     opacity: 0,
+//     skewY: 0
 //   });
 // };
-
-// adds city image once you hover on
-export const handleCity = (city, target) => {
-  gsap.to(target, {
-    duration: 0,
-    background: `url(${city}) center center`
-  });
-  gsap.to(target, {
-    duration: 0.4,
-    opacity: 1,
-    ease: "power3.inOut"
-  });
-  gsap.from(target, {
-    duration: 0.4,
-    skewY: 2,
-    transformOrigin: "right top"
-  });
-};
-
-// Removes the city image once you hover off
-export const handleCityReturn = target => {
-  gsap.to(target, {
-    duration: 0,
-    skewY: 0
-  });
-  gsap.to(target, {
-    duration: 0.4,
-    opacity: 0,
-    skewY: 0
-  });
-};

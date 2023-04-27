@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 // import { Link } from "react-router-dom";
-import SignUpForm from "./SignUpForm.js"; 
-import SignInForm from "./SignInForm.js"; 
+// import SignUpForm from "./SignUpForm.js"; 
+// import SignInForm from "./SignInForm.js"; 
 import Sign from "./Sign.js"; 
 
 
@@ -13,8 +13,8 @@ import {
   fadeInUp,
   // handleHover,
   // handleHoverExit,
-  handleCityReturn,
-  handleCity,
+  // handleCityReturn,
+  // handleCity,
   staggerRevealClose
 } from "./Animations";
 
@@ -32,9 +32,7 @@ const cities = [
   { name: "Adventure", image: beijing }
 ];
 
-
 // function to render the login form of already signed up 
-
 
 const Hamburger = ({ state }) => {
   // Create varibles of our dom nodes
@@ -86,19 +84,10 @@ const Hamburger = ({ state }) => {
           <div className='wrapper'>
             <div className='menu-links'>
               <nav>
-                    
-                 
                    <Sign/>
-                   
-                   
               </nav>
-              
-
               <div>
-      
     </div>
-
-
               <div ref={el => (info = el)} className='info'>
                 {/* <h3>How?</h3>
                 <p>
@@ -106,9 +95,9 @@ const Hamburger = ({ state }) => {
                 </p> */}
                
               </div>
-              <div className='locations'>
+              {/* <div className='locations'>
                 Genre:
-                {/* Returning the list of book types */}
+                Returning the list of book types
                 {cities.map(el => (
                   <span
                     key={el.name}
@@ -117,7 +106,7 @@ const Hamburger = ({ state }) => {
                     {el.name}
                   </span>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

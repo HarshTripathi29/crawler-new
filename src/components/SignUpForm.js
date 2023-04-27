@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import "./App.css";
 
+
 function SignUpForm() {
   const initialValues = { username: "", email: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);

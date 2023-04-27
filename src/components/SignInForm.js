@@ -60,14 +60,7 @@ function SignInForm() {
         <div className="ui divider"></div>
         <div className="ui form">
           <div className="field">
-            {/* <label>Username</label>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              value={formValues.username}
-              onChange={handleChange}
-            /> */}
+           
           </div>
           <p>{formErrors.username}</p>
           <div className="field">
@@ -101,6 +94,4 @@ function SignInForm() {
   );
 }
 
-
-// change fluid ui button blue to ui button
 export default SignInForm;
